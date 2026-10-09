@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %run "../00 - common/01- ingestion data"
 
 # COMMAND ----------
@@ -27,7 +31,7 @@ dim_constructor_df = constuctors_df.join(
 
 # COMMAND ----------
 
-dim_constructor_df.display()
+#dim_constructor_df.display()
 
 # COMMAND ----------
 
@@ -39,7 +43,7 @@ dim_constructor_df_final= dim_constructor_df.select(
 
 # COMMAND ----------
 
-dim_constructor_df_final.display()
+#dim_constructor_df_final.display()
 
 # COMMAND ----------
 
@@ -49,4 +53,4 @@ dim_constructor_df_final.display()
 
 # COMMAND ----------
 
-spark.table(target_table).display()
+#spark.table(target_table).display()

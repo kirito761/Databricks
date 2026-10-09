@@ -52,7 +52,7 @@ sprints_df = ingest_metadata(sprints_df)
 
 # COMMAND ----------
 
-sprints_df.display()
+#sprints_df.display()
 
 # COMMAND ----------
 
@@ -65,4 +65,4 @@ sprints_df.display()
 
 # COMMAND ----------
 
-spark.table(table_name).display()
+#spark.table(table_name).display()

@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %run "../00 - common/01- ingestion data"
 
 # COMMAND ----------
@@ -35,7 +39,7 @@ constructors_df = ingest_metadata(constructors_df)
 
 # COMMAND ----------
 
-constructors_df.display()
+#constructors_df.display()
 
 # COMMAND ----------
 
@@ -48,4 +52,4 @@ constructors_df.display()
 
 # COMMAND ----------
 
-spark.table(table_name).display()
+#spark.table(table_name).display()

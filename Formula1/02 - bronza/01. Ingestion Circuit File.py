@@ -40,18 +40,19 @@ circuit_schema = StructType([
 
 circuit_df = (
     spark.read
-         .format('csv')
+         #.format('csv')
          .option('header', True)
          #.option('inferSchema', True)
          .schema(circuit_schema)
          .option('Mode','FAILFAST')
-         .load(source_file)
+         #.load(source_file)
+         .csv(source_file)
 )
 
 
 # COMMAND ----------
 
-circuit_df.display()
+#circuit_df.display()
 
 # COMMAND ----------
 
@@ -66,7 +67,7 @@ circuit_df = ingest_metadata(circuit_df)
 
 # COMMAND ----------
 
-circuit_df.display()
+#circuit_df.display()
 
 # COMMAND ----------
 
@@ -79,9 +80,9 @@ circuit_df.display()
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC select * from formula1.bronze.circuits
+#%sql
+#select * from formula1.bronze.circuits
 
 # COMMAND ----------
 
-spark.table(table_name).display()
+#spark.table(table_name).display()

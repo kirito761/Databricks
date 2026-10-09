@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %run "../00 - common/01- ingestion data"
 
 # COMMAND ----------
@@ -43,7 +47,7 @@ drivers_df = ingest_metadata(drivers_df)
 
 # COMMAND ----------
 
-drivers_df.display()
+#drivers_df.display()
 
 # COMMAND ----------
 
@@ -56,4 +60,4 @@ drivers_df.display()
 
 # COMMAND ----------
 
-spark.table(table_name).display()
+#spark.table(table_name).display()

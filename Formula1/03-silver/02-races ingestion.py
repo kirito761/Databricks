@@ -14,7 +14,7 @@ races_df = (
 
 # COMMAND ----------
 
-races_df.display()
+#races_df.display()
 
 # COMMAND ----------
 
@@ -44,7 +44,7 @@ races_renamed_df = (
 
 # COMMAND ----------
 
-races_renamed_df.display()
+#races_renamed_df.display()
 
 # COMMAND ----------
 
@@ -73,4 +73,4 @@ races_final_df = (
 
 # COMMAND ----------
 
-spark.table(silver_table).display()
+#spark.table(silver_table).display()

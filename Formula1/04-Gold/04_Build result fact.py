@@ -16,11 +16,11 @@ sprints_df = spark.table(sprints_silver_table).withColumn("session_type",lit("sp
 
 # COMMAND ----------
 
-results_df.display()
+#results_df.display()
 
 # COMMAND ----------
 
-sprints_df.display()
+#sprints_df.display()
 
 # COMMAND ----------
 
@@ -28,7 +28,7 @@ fact_results_sprints_df = results_df.unionByName(sprints_df)
 
 # COMMAND ----------
 
-fact_results_sprints_df.display()
+#fact_results_sprints_df.display()
 
 # COMMAND ----------
 
@@ -43,8 +43,8 @@ fact_final_df = (
 # COMMAND ----------
 
 (
-fact_final_df
-.display()
+#fact_final_df
+#.display()
 )
 
 # COMMAND ----------
@@ -58,4 +58,4 @@ fact_final_df
 
 # COMMAND ----------
 
-spark.table(target_table).display()
+#spark.table(target_table).display()

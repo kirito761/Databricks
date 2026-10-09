@@ -14,7 +14,7 @@ circuit_df = (
 
 # COMMAND ----------
 
-circuit_df.display()
+#circuit_df.display()
 
 # COMMAND ----------
 
@@ -46,7 +46,7 @@ circuit_renamed_df = (
 
 # COMMAND ----------
 
-circuit_renamed_df.display()
+#circuit_renamed_df.display()
 
 # COMMAND ----------
 
@@ -77,4 +77,4 @@ circuit_final_df = (
 
 # COMMAND ----------
 
-spark.table(silver_table).display()
+#spark.table(silver_table).display()

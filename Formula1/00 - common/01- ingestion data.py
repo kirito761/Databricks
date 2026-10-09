@@ -14,9 +14,17 @@ landing_folder_path = '/Volumes/formula1/landing/files/'
 
 # COMMAND ----------
 
-# MAGIC %fs ls dbfs:/Volumes/
+#%fs ls dbfs:/Volumes/formula1/landing/files/
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC select current_metastore()
+#%sql
+#select current_metastore()
+
+# COMMAND ----------
+
+#%sql
+#USE CATALOG formula1;
+
+# COMMAND ----------
+

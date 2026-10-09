@@ -14,7 +14,7 @@ results_df = (
 
 # COMMAND ----------
 
-results_df.display()
+#results_df.display()
 #results_df.describe().display()
 
 # COMMAND ----------
@@ -43,11 +43,11 @@ reults_final_df = (
 
 # COMMAND ----------
 
-reults_final_df.display()
+#reults_final_df.display()
 
 # COMMAND ----------
 
-display(reults_final_df.count() -results_df.count())
+#display(reults_final_df.count() -results_df.count())
 
 # COMMAND ----------
 
@@ -60,4 +60,4 @@ display(reults_final_df.count() -results_df.count())
 
 # COMMAND ----------
 
-spark.table(silver_table).display()   
+#spark.table(silver_table).display()   

@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %run "../00 - common/01- ingestion data"
 
 # COMMAND ----------
@@ -92,7 +96,7 @@ ref_nationality_region_df = spark.createDataFrame(nationality_region_map_rows)
 
 # COMMAND ----------
 
-ref_nationality_region_df.display()
+#ref_nationality_region_df.display()
 
 # COMMAND ----------
 
@@ -105,4 +109,4 @@ ref_nationality_region_df.display()
 
 # COMMAND ----------
 
-spark.table(target_table).display()
+#spark.table(target_table).display()

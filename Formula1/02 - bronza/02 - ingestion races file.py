@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %run "../00 - common/01- ingestion data"
 
 # COMMAND ----------
@@ -34,7 +38,7 @@ races_df = (
 
 # COMMAND ----------
 
-races_df.display()
+#races_df.display()
 
 # COMMAND ----------
 
@@ -49,7 +53,7 @@ races_df = ingest_metadata(races_df)
 
 # COMMAND ----------
 
-races_df.display()
+#races_df.display()
 
 # COMMAND ----------
 
@@ -68,4 +72,4 @@ races_df.display()
 
 # COMMAND ----------
 
-spark.table(table_name).display()
+#spark.table(table_name).display()

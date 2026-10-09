@@ -14,7 +14,7 @@ constructors_df = (
 
 # COMMAND ----------
 
-constructors_df.display()
+#constructors_df.display()
 
 # COMMAND ----------
 
@@ -35,7 +35,7 @@ constructors_renamed_df = (
 
 # COMMAND ----------
 
-constructors_renamed_df.display()
+#constructors_renamed_df.display()
 
 # COMMAND ----------
 
@@ -59,4 +59,4 @@ constructors_final_df = (
 
 # COMMAND ----------
 
-spark.table(silver_table).display()
+#spark.table(silver_table).display()

@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %run "../00 - common/01- ingestion data"
 
 # COMMAND ----------
@@ -50,7 +54,7 @@ results_filter_df = (
 
 #results_filter_df.display()
 #results_filter_df.describe().display()
-display(results_df.count() - results_filter_df.count())
+#display(results_df.count() - results_filter_df.count())
 
 # COMMAND ----------
 
@@ -60,11 +64,11 @@ results_dublicates_removed_df = (
 
 # COMMAND ----------
 
-display(results_filter_df.count() - results_dublicates_removed_df.count())
+#display(results_filter_df.count() - results_dublicates_removed_df.count())
 
 # COMMAND ----------
 
-results_dublicates_removed_df.describe().display()
+#results_dublicates_removed_df.describe().display()
 
 # COMMAND ----------
 
@@ -76,7 +80,7 @@ results_capital_df = (
 
 # COMMAND ----------
 
-results_capital_df.display()
+#results_capital_df.display()
 
 # COMMAND ----------
 
@@ -89,4 +93,4 @@ results_capital_df.display()
 
 # COMMAND ----------
 
-spark.table(silver_table).display()   
+#spark.table(silver_table).display()   
